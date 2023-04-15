@@ -75,6 +75,7 @@ body {
 p {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -124,6 +125,9 @@ a {
 ul {
   list-style-type: none;
   padding: 0;
+}
+.display-inline {
+  display: inline;
 }
 
 .img {
@@ -320,6 +324,7 @@ main {
 }
 
 .delete-btn {
+  margin-top: 20px;
   border: 1px solid var(--primary-500);
   color: var(--primary-500);
 }
