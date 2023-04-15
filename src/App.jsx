@@ -14,17 +14,27 @@ const App = () => {
         setIsLoading(true);
         const response = await fetch(url);
         const tours = await response.json();
-        console.log(tours);
+        // console.log(tours);
+        setTours(tours);
       };
       fetchTours();
     } catch (error) {
       console.log(error);
     }
+    setIsLoading(false);
   }, []);
+
+  if (isLoading) {
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
+  }
 
   return (
     <main>
-      <Tours />
+      <Tours tours={tours} />
     </main>
   );
 };
