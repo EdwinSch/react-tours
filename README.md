@@ -4,4 +4,4 @@ A small React practice project on component rendering from API data, useState fu
 
 Objective: render a list with tour option components from API. Show spinner while loading of needed. User needs to be able to remove tour options and show less/more description text. If all tours are deleted, user should get option to reload.
 
-🚀 [DEPLOY](url)
+🚀 [DEPLOY](https://edwinsch.github.io/react-tours/)
